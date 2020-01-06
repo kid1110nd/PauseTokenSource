@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
 
 namespace PauseTokenSource
@@ -37,6 +33,7 @@ namespace PauseTokenSource
                 }
             }
         }
+
         public PauseToken Token { get { return new PauseToken(this); } }
 
         internal Task WaitWhilePausedAsync()
